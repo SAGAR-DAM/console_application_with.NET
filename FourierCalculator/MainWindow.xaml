@@ -1,0 +1,122 @@
+﻿<Window x:Class="FourierCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fourier Series Calculator" Height="700" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- Expression display -->
+            <RowDefinition Height="Auto"/> <!-- Limits & terms -->
+            <RowDefinition Height="Auto"/> <!-- Token buttons -->
+            <RowDefinition Height="*"/>    <!-- Result image -->
+            <RowDefinition Height="Auto"/> <!-- Info log -->
+        </Grid.RowDefinitions>
+
+        <!-- Expression display -->
+        <TextBox x:Name="exprInput"
+                 Grid.Row="0"
+                 Height="30"
+                 FontSize="16"
+                 IsReadOnly="True"
+                 TextAlignment="Right"
+                 Margin="0,0,0,10"/>
+
+        <!-- Limits & Terms -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock VerticalAlignment="Center" Text="Lower:" Margin="0,0,5,0"/>
+            <TextBox x:Name="lowerLimitInput" Width="80" Text="-3.14"/>
+            <TextBlock VerticalAlignment="Center" Text="Upper:" Margin="10,0,5,0"/>
+            <TextBox x:Name="upperLimitInput" Width="80" Text="3.14"/>
+            <TextBlock VerticalAlignment="Center" Text="Terms:" Margin="10,0,5,0"/>
+            <TextBox x:Name="termsInput" Width="50" Text="10"/>
+            <Button Content="Compute" Click="RunSimulation" Margin="10,0,0,0"/>
+        </StackPanel>
+
+        <!-- Token buttons grid -->
+        <Grid Grid.Row="2" Margin="0,0,0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Functions -->
+            <Button Grid.Row="0" Grid.Column="0" Content="sin(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="1" Content="cos(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="tan(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="3" Content="csc(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="4" Content="sec(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="5" Content="cot(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="6" Content="log(" Click="OnTokenClick"/>
+            <Button Grid.Row="0" Grid.Column="7" Content="exp(" Click="OnTokenClick"/>
+
+            <!-- Digits & Operators row 1 -->
+            <Button Grid.Row="1" Grid.Column="0" Content="7" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="8" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="9" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="3" Content="+" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="4" Content="-" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="5" Content="*" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="6" Content="/" Click="OnTokenClick"/>
+            <Button Grid.Row="1" Grid.Column="7" Content="^" Click="OnTokenClick"/>
+
+            <!-- Digits & Parentheses -->
+            <Button Grid.Row="2" Grid.Column="0" Content="4" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="1" Content="5" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="2" Content="6" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="(" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="4" Content=")" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="5" Content="asin(" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="6" Content="acos(" Click="OnTokenClick"/>
+            <Button Grid.Row="2" Grid.Column="7" Content="atan(" Click="OnTokenClick"/>
+
+            <!-- More token rows -->
+            <Button Grid.Row="3" Grid.Column="0" Content="1" Click="OnTokenClick"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="2" Click="OnTokenClick"/>
+            <Button Grid.Row="3" Grid.Column="2" Content="3" Click="OnTokenClick"/>
+            <Button Grid.Row="3" Grid.Column="3" Content="acsc(" Click="OnTokenClick"/>
+            <Button Grid.Row="3" Grid.Column="4" Content="asec(" Click="OnTokenClick"/>
+            <Button Grid.Row="3" Grid.Column="5" Content="acot(" Click="OnTokenClick"/>
+            <Button Grid.Row="3" Grid.Column="6" Content="C" Click="OnClearClick"/>
+            <Button Grid.Row="3" Grid.Column="7" Content="←" Click="OnBackspaceClick"/>
+
+            <!-- Zero & Decimal -->
+            <!-- Zero, x, decimal -->
+            <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Content="0" Click="OnTokenClick"/>
+            <Button Grid.Row="4" Grid.Column="2" Content="." Click="OnTokenClick"/>
+            <Button Grid.Row="4" Grid.Column="3" Content="x" Click="OnTokenClick"/>
+
+        </Grid>
+
+        <!-- Result image -->
+        <Border Grid.Row="3" BorderBrush="Gray" BorderThickness="1" Margin="0,0,0,10">
+            <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                <Image x:Name="ResultImage" Stretch="Uniform"/>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Info log -->
+        <TextBox x:Name="InfoBlock"
+            Grid.Row="4"
+            FontFamily="Consolas"
+            FontSize="12"
+            TextWrapping="Wrap"
+            AcceptsReturn="True"
+            IsReadOnly="True"
+            VerticalScrollBarVisibility="Auto"
+            Height="100"
+            Margin="0,0,0,0"/>
+
+    </Grid>
+</Window>

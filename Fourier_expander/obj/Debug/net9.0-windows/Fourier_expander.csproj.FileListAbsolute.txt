@@ -17,3 +17,4 @@ D:\console app\Fourier_expander\obj\Debug\net9.0-windows\refint\Fourier_expander
 D:\console app\Fourier_expander\obj\Debug\net9.0-windows\Fourier_expander.pdb
 D:\console app\Fourier_expander\obj\Debug\net9.0-windows\Fourier_expander.genruntimeconfig.cache
 D:\console app\Fourier_expander\obj\Debug\net9.0-windows\ref\Fourier_expander.dll
+D:\console app\Fourier_expander\obj\Debug\net9.0-windows\Fourier_expander.sourcelink.json

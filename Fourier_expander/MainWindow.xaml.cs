@@ -18,7 +18,7 @@ namespace DiceDistGUI
     try
     {
         string terms = termsInput.Text;
-        InfoBlock.Text = $"Running simulation with terms={terms}";
+        InfoBlock.Text = $"Running code with terms={terms}";
 
         string projectRoot = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory)!.Parent!.Parent!.Parent!.FullName;
         string scriptPath = Path.Combine(projectRoot, "PythonBackend", "simulate.py");
@@ -62,7 +62,7 @@ namespace DiceDistGUI
 
         if (File.Exists(outputImage))
         {
-            InfoBlock.Text += "\n✅ Simulation completed successfully.";
+            InfoBlock.Text += "\n✅ Code completed successfully.";
             using (FileStream stream = new FileStream(outputImage, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             {
                 BitmapImage bitmap = new BitmapImage();
