@@ -1,0 +1,23 @@
+D:\Console app\Particle in Electromagnetic field\bin\Debug\net8.0-windows\Particle in Electromagnetic field.exe
+D:\Console app\Particle in Electromagnetic field\bin\Debug\net8.0-windows\Particle in Electromagnetic field.deps.json
+D:\Console app\Particle in Electromagnetic field\bin\Debug\net8.0-windows\Particle in Electromagnetic field.runtimeconfig.json
+D:\Console app\Particle in Electromagnetic field\bin\Debug\net8.0-windows\Particle in Electromagnetic field.dll
+D:\Console app\Particle in Electromagnetic field\bin\Debug\net8.0-windows\Particle in Electromagnetic field.pdb
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\App.g.cs
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field_MarkupCompile.cache
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field_MarkupCompile.lref
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.g.resources
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.GeneratedMSBuildEditorConfig.editorconfig
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.AssemblyInfoInputs.cache
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.AssemblyInfo.cs
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.csproj.CoreCompileInputs.cache
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.dll
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\refint\Particle in Electromagnetic field.dll
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.pdb
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.genruntimeconfig.cache
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\ref\Particle in Electromagnetic field.dll
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle in Electromagnetic field.csproj.AssemblyReference.cache
+D:\Console app\Particle in Electromagnetic field\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Console app\Particle in Electromagnetic field\obj\Debug\net8.0-windows\Particle.CC83666C.Up2Date

@@ -88,7 +88,7 @@ yy_est = fourier_series(xx_full)
 
 plt.figure(dpi=300)
 plt.plot(xx_full, yy, 'g-', label='f(x)')
-plt.plot(xx_full, yy_est, 'r-', label='Fourier approx', lw=0.5)
+plt.plot(xx_full, yy_est, 'r-', label='Fourier approx', lw=1)
 plt.xlabel('x')
 plt.ylabel('y')
 plt.title(f'Fourier Series Approx. (n={n_terms})')
